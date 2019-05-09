@@ -36,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetButton("Jump"))
             {
                 moveDirection.y = jumpSpeed;
+                transform.GetComponent<Animator>().SetTrigger("jump");
             }
         }
 

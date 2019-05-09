@@ -7,7 +7,7 @@ public class PlayerCamera : MonoBehaviour
 
     public Transform playerBody;
     public float mouseSensitivity;
-
+    
     float xAxisClamp = 0.0f;
 
     void Awake()
@@ -17,6 +17,7 @@ public class PlayerCamera : MonoBehaviour
 
     void Update()
     {
+      
         RotateCamera();
     }
 
